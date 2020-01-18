@@ -53,3 +53,39 @@ understood.onclick = function(){
   console.log('bla')
   notice.toggle()
 }
+
+let loadingIcon = document.getElementById("loading")
+
+
+$("#exampleModal").modal()
+
+function hideElement(element){
+  element.style.display = "none"
+}
+
+function showElement(element){
+  element.style.display = "block"
+}
+
+function toggleVisibility(element){
+  let elVisibility = element.style.display
+  let hidden = (elVisibility === 'none')
+  hidden ? element.style.display = 'block' : element.style.display = "none" 
+}
+
+// For mock purposes
+function waitForResult(){
+  setTimeout(function(){
+    hideElement(loadingIcon)
+    showElement(imgRapport)
+  }, 2000)
+}
+
+let imgRapport = document.getElementById("imgRapport")
+
+//hideElement(loadingIcon)
+waitForResult()
+
+
+//toggleVisibility(loadingIcon)
+
