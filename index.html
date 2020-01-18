@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Hello!</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- <a class="navbar-brand" href="#">Menu</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Accueil <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Analyse
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Audit qualite</a>
+              <a class="dropdown-item" href="#">Rapport detaille</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">A propos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="notice" class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Utilisation</h4>
+      <p>
+        Commencez par charger le ou les images d'armoire. Notre IA se chargera
+        de les analyser.
+      </p>
+      <hr />
+      <p id="understood" style="color: red">J'ai compris.</p>
+    </div>
+
+    <div class="main">
+      <h1>Orange CCIC</h1>
+
+      <p>
+        I'm your cool new webpage. Made with
+        <a href="https://glitch.com">Glitch</a>!
+      </p>
+      <div class="custom-file">
+        <input
+          id="fileInput"
+          type="file"
+          accept="image/*"
+          class="custom-file-input"
+          multiple
+        />
+        <label class="custom-file-label" for="inputGroupFile03"
+          >Chargez un fichier</label
+        >
+      </div>
+
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+
+      <figure class="figure container">
+        <img
+          id="image"
+          src="https://cdn.glitch.com/971334d3-6598-4986-b799-31a359192533%2FUntitled%20design(2).png?v=1579380007735"
+          class="figure-img img-fluid rounded mx-auto d-block"
+          alt="A generic square placeholder image with rounded corners in a figure."
+        />
+        <!--         <img
+          id="image"
+          src="https://img.bfmtv.com/c/800/684/a89/b2d8a446f21741d18af960b3ef18e.jpeg"
+          class="figure-img img-fluid rounded mx-auto d-block"
+          alt="A generic square placeholder image with rounded corners in a figure."
+        /> -->
+        <figcaption class="figure-caption">
+          <h2>Qualite</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </figcaption>
+      </figure>
+
+      <div id="thumbnail" class="thumbnail">
+        <!--         <img src="https://img.bfmtv.com/c/800/684/a89/b2d8a446f21741d18af960b3ef18e.jpeg" class="rounded float-left mx-2" alt="...">
+        <img src="https://img.bfmtv.com/c/800/684/a89/b2d8a446f21741d18af960b3ef18e.jpeg" class="rounded float-left" alt="..."> -->
+      </div>
+    </div>
+
+    <script src="https://button.glitch.me/button.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
