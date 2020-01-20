@@ -84,7 +84,7 @@
       <h1>Orange CCIC</h1>
 
       <p>
-        Analyse d'armoires de mutualisation fibre
+        L'IA au service de la fibre.
       </p>
       <div class="custom-file">
         <input
@@ -100,11 +100,11 @@
       </div>
 
       <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Avant</a>
+        <li id="avant" class="nav-item blue">
+          <a id="avantAnchor" class="nav-link active">Avant</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Apres</a>
+        <li id="apres" class="nav-item">
+          <a id="apresAnchor" class="nav-link">Apres</a>
         </li>
         <!--         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
@@ -128,12 +128,13 @@
           alt="A generic square placeholder image with rounded corners in a figure."
         /> -->
         <figcaption class="figure-caption">
-          <h2>Qualite</h2>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
+          <button
+            id="startAnalysis"
+            type="button"
+            class="btn btn-outline-primary"
+          >
+            Lancer l'analyse
+          </button>
         </figcaption>
       </figure>
 
@@ -180,23 +181,20 @@
                 class="figure-img img-fluid rounded mx-auto d-block"
                 src="https://cdn.glitch.com/971334d3-6598-4986-b799-31a359192533%2Fframe330-b.jpg?v=1579383117096"
               />
+              <h1>
+                Rapport
+              </h1>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <ul id="rapportText">
+                <li>
+                  <u>Connexion I1</u> : <br> Orange ===&gt Libre
+                </li>
+              </ul>
             </div>
-            <h1>
-              Rapport
-            </h1>
-            <p>
-              Le Lorem Ipsum est simplement du faux texte employé dans la
-              composition et la mise en page avant impression. Le Lorem Ipsum
-              est le faux texte standard de l'imprimerie depuis les années 1500,
-              quand un imprimeur anonyme assembla ensemble des morceaux de texte
-              pour réaliser un livre spécimen de polices de texte. Il n'a pas
-              fait que survivre cinq siècles, mais s'est aussi adapté à la
-              bureautique informatique, sans que son contenu n'en soit modifié.
-              Il a été popularisé dans les années 1960 grâce à la vente de
-              feuilles Letraset contenant des passages du Lorem Ipsum, et, plus
-              récemment, par son inclusion dans des applications de mise en page
-              de texte, comme Aldus PageMaker.
-            </p>
           </div>
           <div class="modal-footer">
             <button
@@ -214,11 +212,11 @@
 
     <!--Webcam stuff disabled by default (type)-->
     <script type="text/plain">
-      var video = document.querySelector("#videoElement"); if
-      (navigator.mediaDevices.getUserMedia) {
-      navigator.mediaDevices.getUserMedia({ video: true }) .then(function (stream)
-      { video.srcObject = stream; }) .catch(function (err0r) {
-      console.log("Something went wrong!"); }); }
+        var video = document.querySelector("#videoElement"); if
+        (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: true }) .then(function (stream)
+        { video.srcObject = stream; }) .catch(function (err0r) {
+        console.log("Something went wrong!"); }); }
       <!--      -->
     </script>
     <script
