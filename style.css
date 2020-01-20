@@ -1,7 +1,6 @@
 /* CSS files add styling rules to your content */
 
 body {
-  text-align: center
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
 }
@@ -13,7 +12,6 @@ h1 {
 }
 
 p {
-  text-align: center
   font-style: italic;
   color: #373fff;
 }
@@ -64,4 +62,15 @@ ul{
 
 .checked {
   color: orange;
+}
+
+body {
+  max-width: 500px;
+}
+
+.center {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
 }
